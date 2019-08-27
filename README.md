@@ -1,2 +1,2 @@
 # FullLiveActionImageClassifier
-Live action webcam image classifier with TensorFlow; homework for course by Siraj Raval
+Live action webcam image classifier with TensorFlow; homework for Machine Learning course with Siraj Raval
