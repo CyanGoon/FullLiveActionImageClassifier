@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <h1> Live Full Action Image Classifier</h1>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <p>
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>
+    </p>
+    <p>
+    <button id="class-init">Initialize</button>
+    <button id="class-0">Clear Data</button>
+    </p>
+    <p> Hit "Initialize" to establish a neutral data point (this may take a moment to complete).</p>
+    <p> Rotate an object, make a gesture, etc. in front of your camera while clicking one of the
+      "Add" buttons.
+      The more data you feed it, the better the classifier will get at recognizing that object.
+    </p>
+    <p> Press "Clear Data" to wipe its memory (or refresh the page).</p>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
